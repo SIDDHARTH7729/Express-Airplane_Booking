@@ -16,7 +16,20 @@ An express project for displaying the booking system of airlines orchestrating t
  ->  `repositories`-> this folder contains all the logic using which we connect with the DB by writing queries, all the raw queries or ORM queries will go here.
 
 
- ->  `services1` -> contaisn the business logic and interacts with repositories from the database
+ ->  `services` -> contaisn the business logic and interacts with repositories from the database
 
 ->  `utils` -> contains helpers methods
+
+### Setup of the project
+
+ npm install
+
+-> In root diectory create a '.env' file and add env variables, like PORT
+
+-> go inside the src folder and execute the following command
+    `npx sequelize init`
+
+  - If setting up development environment , then write the username of your db,password of db and in dialect write whatever db youare usig liek mysql,mariadb,etc
+
+  -  Similarly for prod environment, make sure you also replace same things
 
